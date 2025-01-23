@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Position</title>
+  </head>
+  <!-- Added padding to add space btwn the header and body also btwn sidenav and body -->
+  <body style="height: 3000px; padding-top: 60px; padding-left: 80px">
+    <!-- doesnt want to resize so setting height instead of bottom -->
+    <div
+      style="
+        background-color: black;
+        color: white;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 50px;
+      "
+    >
+      Header
+    </div>
+
+    <!-- doesnt want to resize so setting width instead of right -->
+    <div
+      style="
+        background-color: green;
+        color: white;
+        position: fixed;
+        top: 50px;
+        bottom: 0px;
+        left: 0px;
+        width: 72px;
+      "
+    >
+      Sidenav
+      <!-- For position fixed elements are placed in the browser window, for absolute in the page -->
+      <!-- Allows elements to put in the corner when placed inside a fixed element -->
+      <div
+        style="
+          background-color: red;
+          color: white;
+          position: absolute;
+          top: 0;
+          right: 0;
+        "
+      >
+        X
+      </div>
+    </div>
+
+    <!-- For position fixed elements are placed in the browser window, for absolute in the page -->
+    <div
+      style="
+        background-color: red;
+        color: white;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+      "
+    >
+      Absolute
+    </div>
+
+    <div
+      style="
+        background-color: lightblue;
+        height: 200px;
+        width: 200px;
+        position: static;
+      "
+    >
+      Div 1
+    </div>
+    <div
+      style="
+        background-color: lightpink;
+        height: 200px;
+        width: 200px;
+        position: relative;
+      "
+    >
+      Div 2
+      <div
+        style="
+          background-color: black;
+          color: white;
+          position: absolute;
+          bottom: 10px;
+          right: 10px;
+        "
+      >
+        5:00
+      </div>
+    </div>
+  </body>
+</html>

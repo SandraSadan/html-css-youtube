@@ -1,0 +1,114 @@
+.thumbnail {
+    width: 100%;
+    /* 
+        For round image
+          height: 200px; 
+          border-radius: 100px;
+          object-fit: cover; 
+          object-position: center; */
+}
+
+.channel-img {
+    border-radius: 50px;
+    width: 36px;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 16px;
+    row-gap: 40px;
+}
+
+/* Responsive design */
+@media (max-width: 800px) {
+    /* if screen size below 800px then 2 rows */
+    .video-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 801px) and (max-width: 1049px) {
+
+    /* if screen size btw 801 and 1049px then 3 rows */
+    .video-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 1050px) {
+
+    /* if screen size above 1050px then 4 rows */
+    .video-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+/* .video-preview {
+        USING INLINE BLOCK
+        width: 280px;
+        take only the space required
+        display: inline-block;
+        align all elements on same line on top
+        vertical-align: top;
+        space after the element
+        margin-right: 15px;
+      } */
+
+.video-info-grid {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+}
+
+.video-title {
+    font-weight: 500;
+    font-size: 14px;
+    /* space btwn lines */
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+
+.video-author,
+.video-stats {
+    margin-bottom: 4px;
+    font-size: 12px;
+    color: rgb(96, 96, 96);
+}
+
+.video-author {
+    margin-bottom: 4px;
+}
+
+.thumbnail-row {
+    margin-bottom: 8px;
+    position: relative;
+}
+
+.video-time {
+    font-size: 12px;
+    /* semi-bold */
+    font-weight: 500;
+    padding: 4px;
+    border-radius: 2px;
+    background-color: black;
+    color: white;
+    position: absolute;
+    bottom: 8px;
+    right: 5px;
+}
+
+.notifications {
+    position: relative;
+}
+
+.notifications-count {
+    position: absolute;
+    top: -3px;
+    right: -5px;
+    background-color: rgb(199, 8, 8);
+    color: white;
+    /* top and right - clockwise */
+    padding: 2px 5px;
+    border-radius: 10px;
+    font-size: 12px;
+}
